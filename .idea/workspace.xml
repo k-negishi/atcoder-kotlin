@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4fa86e64-0280-47d2-9d28-7ed811ee7727" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/abc068/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc114/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc119/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc127/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc133/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc165/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc167/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc168/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc168/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc168/D2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc168/D3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc169/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc169/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc169/D2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/A.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/B.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/C2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/D2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc170/e.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc171/A.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc171/B.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc171/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc171/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc171/D2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc173/A.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc173/B.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc173/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc173/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/abc173/E.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aising2020/A.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aising2020/B.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aising2020/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aising2020/D.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aising2020/E.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/smtb2019/C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/smtb2019/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cz39Y8xXZfhVfh9POwGarLaTEW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/abc168" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.22460938" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="abc171" />
+      <recent name="ABC169" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/abc168" />
+      <recent name="$PROJECT_DIR$/src/abc171" />
+      <recent name="$PROJECT_DIR$/src/abc169" />
+      <recent name="$PROJECT_DIR$/src/abc170" />
+      <recent name="$PROJECT_DIR$/src/abc068" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/ABC169" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Kotlin.aising2020.DKt">
+    <configuration name="abc173.BKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="atcoder-kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="abc173.BKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="abc173.DKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="atcoder-kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="abc173.DKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aising2020.BKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="atcoder-kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="aising2020.BKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aising2020.CKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="atcoder-kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="aising2020.CKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aising2020.DKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="atcoder-kotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="aising2020.DKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.aising2020.DKt" />
+        <item itemvalue="Kotlin.aising2020.CKt" />
+        <item itemvalue="Kotlin.aising2020.BKt" />
+        <item itemvalue="Kotlin.abc173.DKt" />
+        <item itemvalue="Kotlin.abc173.BKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fa86e64-0280-47d2-9d28-7ed811ee7727" name="Default Changelist" comment="" />
+      <created>1591517443328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591517443328</updated>
+      <workItem from="1591517445357" duration="2213000" />
+      <workItem from="1591522954710" duration="16911000" />
+      <workItem from="1591551131653" duration="211000" />
+      <workItem from="1592070947789" duration="13688000" />
+      <workItem from="1592149191211" duration="3086000" />
+      <workItem from="1592312814229" duration="7037000" />
+      <workItem from="1592400495085" duration="520000" />
+      <workItem from="1592408182941" duration="6562000" />
+      <workItem from="1592571335657" duration="816000" />
+      <workItem from="1592740635367" duration="13132000" />
+      <workItem from="1592755158151" duration="3000" />
+      <workItem from="1592839262565" duration="6595000" />
+      <workItem from="1593235029392" duration="848000" />
+      <workItem from="1593950088089" duration="7758000" />
+      <workItem from="1594468741485" duration="5947000" />
+      <workItem from="1594558906468" duration="13000" />
+      <workItem from="1594558993376" duration="111000" />
+      <workItem from="1594564527873" duration="4176000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1591551320974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591551320975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/abc169/B.kt</url>
+          <line>4</line>
+          <properties>
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/abc171/B.kt</url>
+          <line>2</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/abc171/C.kt</url>
+          <line>4</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/src/abc168/D3.kt</url>
+          <line>2</line>
+          <properties method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/abc119/C.kt</url>
+          <line>22</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
