@@ -1,6 +1,6 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
 
-fun main(args: Array<String>) {
+fun main() {
     
 
 }

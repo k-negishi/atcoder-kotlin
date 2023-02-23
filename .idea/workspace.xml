@@ -4,48 +4,57 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fa86e64-0280-47d2-9d28-7ed811ee7727" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/abc068/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc114/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc119/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc127/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc133/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc165/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc167/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc168/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc168/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc168/D2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc168/D3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc169/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc169/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc169/D2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/A.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/B.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/C2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/D2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc170/e.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc171/A.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc171/B.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc171/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc171/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc171/D2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc173/A.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc173/B.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc173/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc173/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/abc173/E.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aising2020/A.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aising2020/B.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aising2020/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aising2020/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aising2020/E.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/smtb2019/C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/smtb2019/D.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4fa86e64-0280-47d2-9d28-7ed811ee7727" name="Default Changelist" comment="move files">
+      <change beforePath="$PROJECT_DIR$/.idea/fileTemplates/internal/Kotlin File.kt" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fileTemplates/internal/Kotlin File.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc068/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc000_100/abc068/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc114/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc114/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc119/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc119/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc127/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc127/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc133/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc133/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc162/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc162/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc162/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc162/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc163/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc163/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc163/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc163/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc164/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc164/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc164/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc164/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc165/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc165/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc165/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc165/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc165/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc165/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc166/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc166/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc166/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc166/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc167/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc167/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc167/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc167/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc167/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc167/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc168/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc168/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc168/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc168/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc168/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc168/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc168/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc168/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc168/D2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc168/D2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc168/D3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc168/D3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc169/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc169/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc169/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc169/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc169/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc169/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc169/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc169/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc169/D2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc169/D2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/C2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/C2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/D2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/D2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc170/e.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc170/e.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc171/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc171/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc171/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc171/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc171/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc171/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc171/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc171/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc171/D2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc171/D2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc173/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc173/A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc173/B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc173/B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc173/C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc173/C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc173/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc173/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abc173/E.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/abc101_200/abc173/E.kt" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,10 +65,11 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
-    <option name="SCHEME" value="Project" />
+    <option name="SCHEME" value="プロジェクト" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,31 +81,30 @@
       </set>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1cz39Y8xXZfhVfh9POwGarLaTEW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/abc168" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.22460938" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/Kei/Development/program/atcoder-kotlin&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;プロジェクト&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="abc171" />
@@ -116,94 +125,60 @@
       <recent name="$PROJECT_DIR$/src/ABC169" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Kotlin.aising2020.DKt">
-    <configuration name="abc173.BKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.AKt (2)">
+    <configuration name="AKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="abc201_300.abc284.AKt" />
       <module name="atcoder-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="abc173.BKt" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="abc173.DKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="AKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="abc201_300.abc285.AKt" />
       <module name="atcoder-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="abc173.DKt" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aising2020.BKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="AKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="abc201_300.abc283.AKt" />
       <module name="atcoder-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="aising2020.BKt" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aising2020.CKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="AKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="abc201_300.abc282.AKt" />
       <module name="atcoder-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aising2020.CKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aising2020.CKt" />
-      <option name="WORKING_DIRECTORY" />
+      <module name="atcoder-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aising2020.DKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="atcoder-kotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    <configuration name="aising2020.DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aising2020.DKt" />
-      <option name="WORKING_DIRECTORY" />
+      <module name="atcoder-kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AKt (2)" />
+        <item itemvalue="Kotlin.AKt (1)" />
+        <item itemvalue="Kotlin.AKt (1)" />
+        <item itemvalue="Kotlin.AKt" />
         <item itemvalue="Kotlin.aising2020.DKt" />
-        <item itemvalue="Kotlin.aising2020.CKt" />
-        <item itemvalue="Kotlin.aising2020.BKt" />
-        <item itemvalue="Kotlin.abc173.DKt" />
-        <item itemvalue="Kotlin.abc173.BKt" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="プロジェクトレベル" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -232,6 +207,10 @@
       <workItem from="1594558906468" duration="13000" />
       <workItem from="1594558993376" duration="111000" />
       <workItem from="1594564527873" duration="4176000" />
+      <workItem from="1676537667472" duration="63000" />
+      <workItem from="1676706605213" duration="948000" />
+      <workItem from="1676885445239" duration="856000" />
+      <workItem from="1677152227026" duration="1086000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1591551320974</created>
@@ -240,20 +219,25 @@
       <option name="project" value="LOCAL" />
       <updated>1591551320975</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="solutions">
+      <created>1677153310702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677153310702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -261,13 +245,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="solutions" />
+    <MESSAGE value="move files" />
+    <option name="LAST_COMMIT_MESSAGE" value="move files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/abc169/B.kt</url>
+          <url>file://$PROJECT_DIR$/src/abc101_200/abc169/B.kt</url>
           <line>4</line>
           <properties>
             <option name="EMULATED" value="true" />
@@ -275,7 +261,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/abc171/B.kt</url>
+          <url>file://$PROJECT_DIR$/src/abc101_200/abc171/B.kt</url>
           <line>2</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
@@ -283,7 +269,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/abc171/C.kt</url>
+          <url>file://$PROJECT_DIR$/src/abc101_200/abc171/C.kt</url>
           <line>4</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
@@ -291,7 +277,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/abc168/D3.kt</url>
+          <url>file://$PROJECT_DIR$/src/abc101_200/abc168/D3.kt</url>
           <line>2</line>
           <properties method="main">
             <option name="EMULATED" value="true" />
@@ -299,9 +285,14 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/abc119/C.kt</url>
+          <url>file://$PROJECT_DIR$/src/abc101_200/abc119/C.kt</url>
           <line>22</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/abc201_300/abc284/A.kt</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
