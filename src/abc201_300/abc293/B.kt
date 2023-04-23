@@ -1,36 +1,23 @@
-package abc201_300.abc295
-
-import kotlin.math.abs
+package abc201_300.abc293
 
 fun main() {
-    val (r, c) = readIntList()
-    var b = List(r) { readLine()!!.toCharArray() }
+    val n = readInt()
+    val a = readIntList()
+    val drop = MutableList<Boolean>(n) {false}
 
-    val ex: MutableList<MutableList<Boolean>> = MutableList(r) { MutableList(c) { false } }
-
-    for (i in 0 until r) {
-        for (j in 0 until c) {
-            val num = b[i][j].toString()
-            if (Regex("[1-9]").matches(num)) {
-                val d = num.toInt()
-                for (i2 in 0 until r) {
-                    for (j2 in 0 until c) {
-                        if (abs(i2 - i) + abs(j2 - j) <= d) {
-                            ex[i2][j2] = true
-                        }
-                    }
-                }
-            }
+    a.forEachIndexed {index, element ->
+        if (!drop[index]) {
+            drop[element-1] = true
         }
     }
+    println(drop.count { !it })
 
-    val ans = MutableList(r) { MutableList(c) { '.' } }
-    for (i in 0 until r) {
-        for (j in 0 until c) {
-            if (b[i][j] == '#' && !ex[i][j]) ans[i][j] = '#'
-        }
-        println(ans[i].joinToString(""))
+    val ans = mutableListOf<Int>()
+    drop.forEachIndexed { index, element ->
+        if (!element) ans.add(index+1)
     }
+    println(ans.sorted().joinToString(" "))
+
 }
 
 

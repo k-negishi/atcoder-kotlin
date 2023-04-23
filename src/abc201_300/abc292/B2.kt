@@ -1,36 +1,17 @@
-package abc201_300.abc295
-
-import kotlin.math.abs
+package abc201_300.abc292
 
 fun main() {
-    val (r, c) = readIntList()
-    var b = List(r) { readLine()!!.toCharArray() }
+    val(n, q) = readIntList()
+    val map = mutableMapOf<Int, Int>()
 
-    val ex: MutableList<MutableList<Boolean>> = MutableList(r) { MutableList(c) { false } }
-
-    for (i in 0 until r) {
-        for (j in 0 until c) {
-            val num = b[i][j].toString()
-            if (Regex("[1-9]").matches(num)) {
-                val d = num.toInt()
-                for (i2 in 0 until r) {
-                    for (j2 in 0 until c) {
-                        if (abs(i2 - i) + abs(j2 - j) <= d) {
-                            ex[i2][j2] = true
-                        }
-                    }
-                }
-            }
+    repeat(q) {
+        val(card, x) = readIntList()
+        when (card) {
+            3 -> println(if ((map[x] ?: 0) >= 2) "Yes" else "No")
+            else -> map[x] = map.getOrDefault(x, 0) + card
         }
     }
-
-    val ans = MutableList(r) { MutableList(c) { '.' } }
-    for (i in 0 until r) {
-        for (j in 0 until c) {
-            if (b[i][j] == '#' && !ex[i][j]) ans[i][j] = '#'
-        }
-        println(ans[i].joinToString(""))
-    }
+    
 }
 
 
