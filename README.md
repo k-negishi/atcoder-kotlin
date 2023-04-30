@@ -1,4 +1,4 @@
-This repository stores my AtCoder's solutions by Kotlin.
+This repository is a record of my Kotlin solutions for AtCoder.
 
-My progress and submissions are at the following URL.  
+For my submission history and progress, please refer to the following link:
 https://kenkoooo.com/atcoder/#/table/ksng256
