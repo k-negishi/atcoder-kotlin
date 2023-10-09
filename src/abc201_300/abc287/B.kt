@@ -1,8 +1,22 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc201_300.abc287
 
 @ExperimentalStdlibApi
 fun main() {
-    
+    val (n, m) = readIntList()
+    val s = mutableListOf<String>()
+    val t = mutableListOf<String>()
+
+
+    repeat(n) {
+        s.add(read())
+    }
+
+    repeat(m) {
+        t.add(read())
+    }
+
+    val count = s.count { it.substring(3) in t }
+    println(count)
 
 }
 
@@ -59,5 +73,3 @@ private fun readLongMatrix(n: Int): MutableList<MutableList<Long>> {
     return matrix
 }
 
-#end
-#parse("File Header.java")
