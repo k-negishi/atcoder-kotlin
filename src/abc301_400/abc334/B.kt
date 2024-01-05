@@ -1,44 +1,26 @@
 package abc301_400.abc334
 
 fun main() {
-    val (a, m, l, r) = readLongList()
-    var ans = 0L
+    var (a, m, l, r) = readLongList()
+    // Aを0にする
+    l -= a
+    r -= a
 
-    if (a in l .. m) {
-        var zahyo = a
-        while (l <= zahyo && zahyo <= r) {
-            ans++
-            zahyo -= m
-        }
-
-        var zahyo2 = a + m
-        while (l <= zahyo2 && zahyo2 <= r) {
-            ans++
-            zahyo += m
-        }
-
-        println(ans)
-    } else {
-        if (a < l) {
-            var zahyo = a
-            while (zahyo <= r) {
-                if (zahyo in l .. r) {
-                    ans++
-                }
-                zahyo += m
-            }
-        } else {
-            var zahyo = a
-            while (l <= zahyo) {
-                if (zahyo in l .. r) {
-                    ans++
-                }
-                zahyo -= m
-            }
-        }
-        println(ans)
+    // L が負であれば両方正にする
+    if (l < 0) {
+        val x = -l / m + 1
+        l += x * m
+        r += x * m
     }
 
+    // (0~R) - (0~L-1)
+    val ans = calc(r, m) - calc(l-1, m)
+    println(ans)
+
+}
+
+fun calc(v: Long, m: Long): Long {
+    return v / m
 }
 
 

@@ -1,23 +1,16 @@
 package abc301_400.abc334
 
 fun main() {
-    val (a, m, l, r) = readLongList()
+    val (n, q ) = readIntList()
+    val r = readLongList().sorted()
+    val acc = r.scan(0, Long::plus)
 
+    repeat(q) {
+        val x = readLong()
+        val ans = acc.upperBound(x)-1
+        println(ans)
+    }
 
-//    val ans = (r - (l - (m + 1) / 2)) / m
-//    val ans = ((r - l) + m - 1)  / m
-//    var ans = (r - (l - m / 2) + m - 1) / m
-////    var ans = (r - l) / m
-//    if (l % m == 0.toLong() || r % m == 0.toLong()) {
-//        ans++
-//    }
-
-    val left = (l - a + m + 1) / m
-    val right = (r - a) / m
-
-    val ans = left + right
-
-    println(ans)
 }
 
 
@@ -101,3 +94,50 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
+private fun List<Long>.lowerBound(value: Long): Long {
+    var left = 0L
+    var right = this.size.toLong()
+
+    while (left < right) {
+        val mid = left + (right - left) / 2
+        if (this[mid.toInt()] < value) {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    return left
+}
+
+private fun List<Int>.upperBound(value: Int): Int {
+    var left = 0
+    var right = this.size
+
+    while (left < right) {
+        val mid = left + (right - left) / 2
+        if (this[mid] <= value) {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    return left
+}
+
+private fun List<Long>.upperBound(value: Long): Long {
+    var left = 0L
+    var right = this.size.toLong()
+
+    while (left < right) {
+        val mid = left + (right - left) / 2
+        if (this[mid.toInt()] <= value) {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    return left
+}
