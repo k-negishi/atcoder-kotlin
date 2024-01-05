@@ -1,12 +1,19 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc312
 
+@ExperimentalStdlibApi
 fun main() {
-    
+    val s = read()
+    val list = listOf("ACE", "BDF", "CEG", "DFA", "EGB", "FAC", "GBD")
+    if (list.contains(s)) {
+        println("Yes")
+    } else {
+        println("No")
+    }
 
 }
 
 
-private fun read() = readln()
+private fun read() = readLine()!!
 
 private fun readInt() = read().toInt()
 
@@ -18,19 +25,7 @@ private fun readStringList(): MutableList<String> = read().split(" ").toMutableL
 
 private fun readIntList(): MutableList<Int> = readStringList().map { it.toInt() }.toMutableList()
 
-private fun readIntListFromOne(): MutableList<Int> {
-    val a = listOf(0)
-    val b = readStringList().map { it.toInt() }.toList()
-    return (a + b).toMutableList()
-}
-
 private fun readLongList(): MutableList<Long> = readStringList().map { it.toLong() }.toMutableList()
-
-private fun readLongListFromOne(): MutableList<Long> {
-    val a = listOf(0L)
-    val b = readStringList().map { it.toLong() }.toList()
-    return (a + b).toMutableList()
-}
 
 private fun readDoubleList(): MutableList<Double> = readStringList().map { it.toDouble() }.toMutableList()
 
@@ -70,21 +65,3 @@ private fun readLongMatrix(n: Int): MutableList<MutableList<Long>> {
     return matrix
 }
 
-private fun List<Int>.lowerBound(value: Int): Int {
-    var left = 0
-    var right = this.size
-
-    while (left < right) {
-        val mid = left + (right - left) / 2
-        if (this[mid] < value) {
-            left = mid + 1
-        } else {
-            right = mid
-        }
-    }
-
-    return left
-}
-
-#end
-#parse("File Header.java")

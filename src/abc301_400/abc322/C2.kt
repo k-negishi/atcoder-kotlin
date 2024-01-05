@@ -1,7 +1,32 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc322
+
+import kotlin.math.max
+import kotlin.math.min
 
 fun main() {
-    
+    val (n, m) = readIntList()
+    val s = read() + '0'
+
+    var now = ""
+    var ans = 0
+
+    fun solve(s: String): Int {
+        val one = s.count { it == '1' }
+        val two = s.count { it == '2' }
+
+        return (one + two) - min(m, one)
+    }
+
+    s.forEach {
+        if (it == '0') {
+            solve(now)
+            ans = max(ans, solve(now))
+            now = ""
+        } else {
+            now += it
+        }
+    }
+    println(ans)
 
 }
 
@@ -86,5 +111,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-#end
-#parse("File Header.java")

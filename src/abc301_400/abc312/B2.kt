@@ -1,10 +1,49 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc312
 
 fun main() {
-    
+    val (n, m) = readIntList()
+    val s = mutableListOf<String>()
+    repeat(n) {
+        s.add(read())
+    }
+
+    val T: List<String> = """
+        ###.?????
+        ###.?????
+        ###.?????
+        ....?????
+        ?????????
+        ?????....
+        ?????.###
+        ?????.###
+        ?????.###
+    """.trimIndent().split("\n")
+
+    fun valid(s: List<String>): Boolean {
+        repeat(9) { i ->
+            repeat(9) hoge@{ j ->
+                if (T[i][j] == '?') return@hoge
+                if (s[i][j] != T[i][j]) return false
+            }
+        }
+        return true
+    }
+
+    for (si in 0 until n - 8) {
+        for (sj in 0 until m - 8) {
+            val t = MutableList<String>(9) { "" }
+            repeat(9) { it1 ->
+                repeat(9) { it2 ->
+                    t[it1] = t[it1] + s[si+it1][sj+it2]
+                }
+            }
+            if (valid(t)) {
+                println((si+1).toString() + " " + (sj+1).toString())
+            }
+        }
+    }
 
 }
-
 
 private fun read() = readln()
 
@@ -86,5 +125,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-#end
-#parse("File Header.java")

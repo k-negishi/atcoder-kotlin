@@ -1,7 +1,25 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc322
+
+import kotlin.math.min
 
 fun main() {
-    
+    val (k, g, m) = readIntList()
+
+    var gml = 0
+    var mml = 0
+
+    repeat(k) {
+        if (gml == g) {
+            gml = 0
+        } else if (mml == 0) {
+            mml = m
+        } else {
+            val x = min(g - gml, mml)
+            gml += x
+            mml -= x
+        }
+    }
+    println("$gml $mml")
 
 }
 
@@ -86,5 +104,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-#end
-#parse("File Header.java")

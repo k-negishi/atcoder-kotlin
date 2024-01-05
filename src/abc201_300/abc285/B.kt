@@ -1,8 +1,24 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc201_300.abc285
 
 fun main() {
-    
+    val n = readInt()
+    val s = read()
 
+    for (i in 1 until n) {
+        var l = 0
+        var flag = true
+        while (l + i < n) {
+            if (s[l] == s[l + i]) {
+                println(l)
+                flag = false
+                break
+            }
+            l++
+        }
+        if (flag) {
+            println(l)
+        }
+    }
 }
 
 
@@ -86,5 +102,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-#end
-#parse("File Header.java")

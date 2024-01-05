@@ -1,7 +1,14 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc322
 
 fun main() {
-    
+    val (n, s, k) = readIntList()
+    var ans = 0
+    repeat(n) {
+        val(p, q) = readIntList()
+        ans += p * q
+    }
+    if (ans < s) ans += k
+    println(ans)
 
 }
 
@@ -86,5 +93,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-#end
-#parse("File Header.java")

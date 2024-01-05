@@ -1,7 +1,34 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc322
 
 fun main() {
-    
+    val (n, m) = readIntList()
+    val s = read()
+
+    var ableM = m
+    var ableAC = 0
+    var buyAC = 0
+
+    s.forEach { it ->
+        if (it == '1') {
+            if (ableM > 0) {
+                ableM--
+            } else if (ableAC > 0) {
+                ableAC--
+            } else {
+                buyAC++
+            }
+        } else if (it == '2') {
+            if (ableAC > 0) {
+                ableAC--
+            } else {
+                buyAC++
+            }
+        } else {
+            ableM = m
+            ableAC = buyAC
+        }
+    }
+    println(buyAC)
 
 }
 
@@ -86,5 +113,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-#end
-#parse("File Header.java")
