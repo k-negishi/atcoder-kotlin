@@ -86,5 +86,53 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
+private fun List<Long>.lowerBound(value: Long): Long {
+    var left = 0L
+    var right = this.size.toLong()
+
+    while (left < right) {
+        val mid = left + (right - left) / 2
+        if (this[mid.toInt()] < value) {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    return left
+}
+
+private fun List<Int>.upperBound(value: Int): Int {
+    var left = 0
+    var right = this.size
+
+    while (left < right) {
+        val mid = left + (right - left) / 2
+        if (this[mid] <= value) {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    return left
+}
+
+private fun List<Long>.upperBound(value: Long): Long {
+    var left = 0L
+    var right = this.size.toLong()
+
+    while (left < right) {
+        val mid = left + (right - left) / 2
+        if (this[mid.toInt()] <= value) {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    return left
+}
+
 #end
 #parse("File Header.java")
