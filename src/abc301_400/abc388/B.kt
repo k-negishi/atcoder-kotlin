@@ -1,29 +1,13 @@
 package abc301_400.abc388
 
-import java.util.*
-
 fun main() {
     val s = read()
-    val map = TreeMap<Char, Int>()
 
-    for (c in s) {
-        if (map[c] != null) {
-            map[c] = map[c]!! + 1
-        } else {
-            map[c] = 1
-        }
-    }
+    val charCount = s.groupingBy { it }.eachCount()
+    val max = charCount.maxOf { it.value }
+    val ans = charCount.filter { it.value == max }.minOf { it.key }
 
-    val max = map.maxOf { it.value }
-    for ((k, v) in map) {
-        if (v == max) {
-            println(k)
-            return
-        }
-    }
-
-
-
+    println(ans)
 }
 
 

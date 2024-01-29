@@ -3,25 +3,12 @@ package abc301_400.abc388
 fun main() {
     val s = read()
 
-    if (s[0].isLowerCase()) {
-        println("No")
-        return
+    when {
+        s.first().isLowerCase() -> println("No")
+        s.length == 1 -> println("Yes")
+        s.substring(1).all { it.isLowerCase() } -> println("Yes")
+        else -> println("No")
     }
-
-    if (s.length == 1) {
-        println("Yes")
-        return
-    }
-    for (i in 1 until s.length) {
-        val c = s[i]
-        if (c.isUpperCase()) {
-            println("No")
-            return
-        }
-    }
-
-    println("Yes")
-
 }
 
 
