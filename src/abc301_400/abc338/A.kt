@@ -1,40 +1,14 @@
-package abc301_400.abc388
+package abc301_400.abc338
 
 fun main() {
-    val n = readInt()
-    val q = readIntList()
-    val a = readIntList()
-    val b = readIntList()
+    val s = read()
 
-//    val limit = q.max()
-
-    var max = 0
-    for (i in 0 until Int.MAX_VALUE) {
-        val tempQ1 = q.mapIndexed { index, it ->
-            it - a[index]*i
-        }
-        if (tempQ1.any { it < 0 }) break
-
-        var bMin = Int.MAX_VALUE
-        for (j in 0 until n) {
-            if (b[j] == 0) continue
-            val calc = tempQ1[j] / b[j]
-            bMin = minOf(bMin, calc)
-        }
-
-        max = maxOf(max, bMin + i)
-
-//        for (j in 0 until limit) {
-//            val tempQ2 = tempQ1.mapIndexed { index, it ->
-//                it - b[index]*j
-//            }
-//            if (tempQ2.any { it < 0 }) break
-//            max = maxOf(max, (i+j))
-//        }
+    when {
+        s.first().isLowerCase() -> println("No")
+        s.length == 1 -> println("Yes")
+        s.substring(1).all { it.isLowerCase() } -> println("Yes")
+        else -> println("No")
     }
-
-    println(max)
-
 }
 
 

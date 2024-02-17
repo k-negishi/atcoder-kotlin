@@ -1,14 +1,13 @@
-package abc301_400.abc388
+package abc301_400.abc338
 
 fun main() {
     val s = read()
 
-    when {
-        s.first().isLowerCase() -> println("No")
-        s.length == 1 -> println("Yes")
-        s.substring(1).all { it.isLowerCase() } -> println("Yes")
-        else -> println("No")
-    }
+    val charCount = s.groupingBy { it }.eachCount()
+    val max = charCount.maxOf { it.value }
+    val ans = charCount.filter { it.value == max }.minOf { it.key }
+
+    println(ans)
 }
 
 

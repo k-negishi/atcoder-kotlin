@@ -1,13 +1,40 @@
-package abc301_400.abc388
+package abc301_400.abc338
 
 fun main() {
-    val s = read()
+    val n = readInt()
+    val q = readIntList()
+    val a = readIntList()
+    val b = readIntList()
 
-    val charCount = s.groupingBy { it }.eachCount()
-    val max = charCount.maxOf { it.value }
-    val ans = charCount.filter { it.value == max }.minOf { it.key }
+//    val limit = q.max()
 
-    println(ans)
+    var max = 0
+    for (i in 0 until Int.MAX_VALUE) {
+        val tempQ1 = q.mapIndexed { index, it ->
+            it - a[index]*i
+        }
+        if (tempQ1.any { it < 0 }) break
+
+        var bMin = Int.MAX_VALUE
+        for (j in 0 until n) {
+            if (b[j] == 0) continue
+            val calc = tempQ1[j] / b[j]
+            bMin = minOf(bMin, calc)
+        }
+
+        max = maxOf(max, bMin + i)
+
+//        for (j in 0 until limit) {
+//            val tempQ2 = tempQ1.mapIndexed { index, it ->
+//                it - b[index]*j
+//            }
+//            if (tempQ2.any { it < 0 }) break
+//            max = maxOf(max, (i+j))
+//        }
+    }
+
+    println(max)
+
 }
 
 
