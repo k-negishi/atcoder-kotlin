@@ -137,7 +137,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int):Int {
     return if (b == 0) {
         a
     } else {
@@ -148,7 +148,7 @@ fun gcd(a: Int, b: Int):Int {
 /**
  * 最大公約数を求める
  */
-fun gcd(a: Long, b: Long): Long {
+private fun gcd(a: Long, b: Long): Long {
     return if (b == 0L) {
         a
     } else {
@@ -160,14 +160,14 @@ fun gcd(a: Long, b: Long): Long {
 /**
  * 最小公倍数を求める
  */
-fun lcm(a: Int, b: Int): Int {
+private fun lcm(a: Int, b: Int): Int {
     return a * b / gcd(a, b)
 }
 
 /**
  * 最小公倍数を求める
  */
-fun lcm(a: Long, b: Long): Long {
+private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
