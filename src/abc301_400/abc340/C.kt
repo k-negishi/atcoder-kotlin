@@ -1,29 +1,21 @@
-package abc301_400.abc343
+package abc301_400.abc340
+
+val memo = mutableMapOf<Long, Long>()
 
 fun main() {
-    val (n, t) = readIntList()
-    val scoreMap = (1L..n).associateWith { 0L }.toMutableMap()
+    val n = readLong()
 
-    val countMap = mutableMapOf<Long, Long>(0L to n.toLong())
-    var size = 1L
+    val ans = f(n)
+    println(ans)
+}
 
-    repeat(t) {
-        val (a, b) = readLongList()
-        val origin = scoreMap[a]!!
-        val score = origin + b
+private fun f(x: Long) : Long {
+    if (x == 1L) return 0
+    if (memo.containsKey(x)) return memo[x]!!
 
-        countMap[origin] = countMap[origin]!! - 1L
-        if (countMap[origin]!! == 0L) {
-            countMap.remove(origin)
-            size--
-        }
-
-        scoreMap[a] = score
-        countMap[score] = (countMap[score] ?: 0L) + 1L
-
-        println(countMap.size)
-    }
-
+    val res = f(x/2) + f((x+1)/2) + x
+    memo[x] = res
+    return res
 }
 
 

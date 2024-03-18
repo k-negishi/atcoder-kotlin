@@ -1,38 +1,26 @@
 package abc301_400.abc343
 
 fun main() {
-    val n = readInt()
-    val a = readLongList()
-    val m = readInt()
-    val b = readLongList()
-    val l = readInt()
-    val c = readLongList()
-    val q = readInt()
-    val x = readLongList()
+    val n = readLong()
+    val list = mutableListOf<Long>()
 
-    val map = x.associateWith {
-        false
-    }.toMutableMap()
-
-    a.forEach { ita ->
-        b.forEach { itb ->
-            c.forEach { itc ->
-                val sum = ita + itb + itc
-                if (map.containsKey(sum)) {
-                    map[sum] = true
-                }
-            }
-        }
-    }
-
-    x.forEach { itx ->
-        if (map[itx]!!) {
-            println("Yes")
+    for (i in 1 .. n) {
+        val rippou = i * i * i
+        if (rippou <= n) {
+            list.add(rippou)
         } else {
-            println("No")
+            break
         }
     }
 
+    list.reversed().forEach {
+        val str = it.toString()
+        val reverse = str.reversed()
+        if (str == reverse) {
+            println(str)
+            return
+        }
+    }
 }
 
 

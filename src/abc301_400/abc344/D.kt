@@ -1,27 +1,44 @@
-package abc301_400.abc343
+package abc301_400.abc344
+
+import kotlin.math.min
 
 fun main() {
-    val (n, t) = readIntList()
-    val scoreMap = (1L..n).associateWith { 0L }.toMutableMap()
+    val t = read()
+    val n = readInt()
+    val sList = List(n) {
+        readln().split(" ").drop(1)
+    }
 
-    val countMap = mutableMapOf<Long, Long>(0L to n.toLong())
-    var size = 1L
+    // 動的計画法のテーブル dp を初期化
+    val dp = MutableList(n + 1) { MutableList(t.length + 1) { Int.MAX_VALUE } }
+    dp[0][0] = 0
 
-    repeat(t) {
-        val (a, b) = readLongList()
-        val origin = scoreMap[a]!!
-        val score = origin + b
+    for (i in 0 until n) {
+        for (j in 0..t.length) {
 
-        countMap[origin] = countMap[origin]!! - 1L
-        if (countMap[origin]!! == 0L) {
-            countMap.remove(origin)
-            size--
+            // 何もしなかったらdp[i][j]と同じ結果になる遷移
+            dp[i + 1][j] = dp[i][j]
         }
 
-        scoreMap[a] = score
-        countMap[score] = (countMap[score] ?: 0L) + 1L
+        // sList 部分文字列に対するループ
+        for (s in sList[i]) {
+            val l = s.length
+            for (j in 0..t.length) {
+                if (j + l > t.length) continue
+//                for (k in s.indices) {
+//                    if (t[j + k] != s[k]) ok = false
+//                }
+                if (t.substring(j, j+l) == s && dp[i][j] != Int.MAX_VALUE) {
+                    dp[i + 1][j + l] = min(dp[i + 1][j + l], dp[i][j] + 1)
+                }
+            }
+        }
+    }
 
-        println(countMap.size)
+    if (dp[n][t.length] == Int.MAX_VALUE) {
+        println(-1)
+    } else {
+        println(dp[n][t.length])
     }
 
 }

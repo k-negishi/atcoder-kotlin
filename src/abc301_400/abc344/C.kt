@@ -1,27 +1,36 @@
-package abc301_400.abc343
+package abc301_400.abc344
 
 fun main() {
-    val (n, t) = readIntList()
-    val scoreMap = (1L..n).associateWith { 0L }.toMutableMap()
+    val n = readInt()
+    val a = readLongList()
+    val m = readInt()
+    val b = readLongList()
+    val l = readInt()
+    val c = readLongList()
+    val q = readInt()
+    val x = readLongList()
 
-    val countMap = mutableMapOf<Long, Long>(0L to n.toLong())
-    var size = 1L
+    val map = x.associateWith {
+        false
+    }.toMutableMap()
 
-    repeat(t) {
-        val (a, b) = readLongList()
-        val origin = scoreMap[a]!!
-        val score = origin + b
-
-        countMap[origin] = countMap[origin]!! - 1L
-        if (countMap[origin]!! == 0L) {
-            countMap.remove(origin)
-            size--
+    a.forEach { ita ->
+        b.forEach { itb ->
+            c.forEach { itc ->
+                val sum = ita + itb + itc
+                if (map.containsKey(sum)) {
+                    map[sum] = true
+                }
+            }
         }
+    }
 
-        scoreMap[a] = score
-        countMap[score] = (countMap[score] ?: 0L) + 1L
-
-        println(countMap.size)
+    x.forEach { itx ->
+        if (map[itx]!!) {
+            println("Yes")
+        } else {
+            println("No")
+        }
     }
 
 }
