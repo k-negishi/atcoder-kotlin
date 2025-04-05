@@ -1,7 +1,29 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc342
 
 fun main() {
-    
+    val n = readInt()
+    val s = read()
+    val q = readInt()
+
+    val map = mutableMapOf<String, String>()
+
+    for (char in 'a'..'z') {
+        map[char.toString()] = char.toString()
+    }
+
+    repeat(q) {
+        val (c, d) = readStringList()
+        val keys = map.keys.filter { map[it] == c }
+        keys.forEach { key ->
+            map[key] = d
+        }
+    }
+
+    val ans = s.map {
+        return@map map[it.toString()] ?: it.toString()
+    }.joinToString("")
+
+    println(ans)
 
 }
 
@@ -134,42 +156,3 @@ private fun List<Long>.upperBound(value: Long): Long {
     return left
 }
 
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Int, b: Int):Int {
-    return if (b == 0) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Long, b: Long): Long {
-    return if (b == 0L) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Int, b: Int): Int {
-    return a * b / gcd(a, b)
-}
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Long, b: Long): Long {
-    return a * b / gcd(a, b)
-}
-
-#end
-#parse("File Header.java")

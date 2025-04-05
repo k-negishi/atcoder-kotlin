@@ -1,7 +1,22 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc311
 
 fun main() {
-    
+    val n = readInt()
+    val a = readIntListFromOne()
+
+    var v = 1
+    repeat(n) {
+        v = a[v]
+    }
+    val sv = v
+    val ans = mutableListOf<Int>()
+    do {
+        ans.add(v)
+        v = a[v]
+    } while (v != sv)
+
+    println(ans.size)
+    println(ans.joinToString(" "))
 
 }
 
@@ -137,7 +152,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +186,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

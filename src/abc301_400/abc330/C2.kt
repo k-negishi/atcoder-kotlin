@@ -1,7 +1,29 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc330
+
+import kotlin.math.abs
+import kotlin.math.sqrt
 
 fun main() {
-    
+    val d = readLong()
+
+    var min = Long.MAX_VALUE
+
+    val sqrtD = sqrt(d.toDouble()).toLong() + 1 // 切り捨て対策
+
+    for (x in 1..sqrtD) {
+        val y = sqrt(d - x * x.toDouble()).toLong() // 切り捨て
+        val y2 = y + 1 // 切り上げ
+
+        val calc1 = abs(x * x + y * y - d)
+        val calc2 = abs(x * x + y2 * y2 - d)
+
+        min = minOf(min, calc1, calc2)
+        if (min == 0L) {
+            break
+        }
+    }
+
+    println(min)
 
 }
 
@@ -137,7 +159,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +193,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

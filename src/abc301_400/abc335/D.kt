@@ -1,7 +1,56 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc335
 
 fun main() {
-    
+    val n = readInt()
+    val masu = MutableList(n) { MutableList(n) { "0" } }
+    val center = (n-1)/2
+
+    var x = 0
+    var y = 0
+    var arrow = "R"
+
+    (1.. n*n-1).forEach { it ->
+        masu[x][y] = it.toString()
+        if (arrow == "R") {
+            if (x + 1 >= n || masu[x + 1][y] != "0") {
+                arrow = "D"
+                y += 1
+                return@forEach
+            }
+            x += 1
+        }
+        if (arrow == "D") {
+            if (y + 1 >= n || masu[x][y + 1] != "0") {
+                arrow = "L"
+                x -= 1
+                return@forEach
+            }
+            y += 1
+        }
+        if (arrow == "L") {
+            if (x - 1 < 0 || masu[x - 1][y] != "0") {
+                arrow = "U"
+                y -= 1
+                return@forEach
+            }
+            x -= 1
+        }
+        if (arrow == "U") {
+            if (y - 1 < 0 || masu[x][y - 1] != "0") {
+                arrow = "R"
+                x += 1
+                return@forEach
+            }
+            y -= 1
+        }
+    }
+
+    masu[center][center] = "T"
+
+    masu.forEach {
+        println(it.joinToString(" "))
+    }
+
 
 }
 
@@ -137,7 +186,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +220,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

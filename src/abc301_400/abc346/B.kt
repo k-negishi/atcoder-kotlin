@@ -1,7 +1,26 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc346
 
 fun main() {
-    
+    val (w, b) = readIntList()
+
+    val s = "wbwbwwbwbwbw".repeat(1000)
+
+    val n = w + b
+
+
+    for (i in 0 until s.length - n) {
+        val subStr = s.substring(i until i + n)
+        if (subStr.count { it == 'w' } == w && subStr.count { it == 'b' } == b) {
+            println("Yes")
+            return
+        }
+    }
+
+    println("No")
+
+
+
+
 
 }
 
@@ -137,7 +156,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +190,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

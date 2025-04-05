@@ -1,8 +1,17 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc308
+
+import java.math.RoundingMode
 
 fun main() {
-    
+    val n = readLine()!!.toInt()
+    val ab = List(n) { readLine()!!.split(" ").map(String::toBigDecimal) }
 
+    val noToPt = ab.mapIndexed { index, list ->
+        index + 1 to list[0].divide(list[0] + list[1], 50, RoundingMode.HALF_UP)
+    }
+    noToPt.sortedWith(compareBy({ -it.second }, { it.first }))
+        .joinToString(" ") { it.first.toString() }
+        .let { println(it) }
 }
 
 
@@ -137,7 +146,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +180,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

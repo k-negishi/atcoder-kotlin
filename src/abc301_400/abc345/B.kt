@@ -1,7 +1,23 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc345
+
+import java.math.BigDecimal
 
 fun main() {
-    
+    val x = readLong()
+    val dev = BigDecimal.valueOf(x).divide(BigDecimal.valueOf(10))
+    val just = x / 10
+
+    if (dev.equals(BigDecimal.valueOf(just))) {
+        println(just)
+        return
+    }
+
+    if (dev.toDouble() >= 0) {
+        println(just + 1)
+    } else {
+        println(just)
+    }
+
 
 }
 
@@ -137,7 +153,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +187,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

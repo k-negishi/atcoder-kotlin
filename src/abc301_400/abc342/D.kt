@@ -1,10 +1,55 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc342
+
+import kotlin.math.sqrt
 
 fun main() {
-    
+    val n = readLong()
+    val a = readLongList()
+
+    // 素因数分解結果を保存するマップ
+    val map = mutableMapOf<Int, Long>()
+
+    // a の中に含まれる0の個数
+    var zero = 0L
+
+    // a の各要素に対して処理を行う
+    a.forEach { it ->
+        // 0 の場合は zero をインクリメント
+        if (it == 0L) {
+            zero++
+        } else {
+            var calcA = it
+            var newA = 1
+            // 2からsqrt(it)までの素数で割り切れる回数を計算
+            for (p in 2..sqrt(it.toDouble()).toInt()) {
+                var count = 0
+                // 割り切れるだけ割り、その回数を count に加算
+                while (calcA % p == 0L) {
+                    calcA /= p
+                    count++
+                }
+                // 素数の出現回数を2で割った余りが1の場合、新しい数にその素数を掛ける
+                if (count %2 == 1) newA *= p
+            }
+            // 最後に残った素数を新しい数に掛ける
+            if (calcA != 1L) newA *= calcA.toInt()
+            // 新しい数をマップに追加または更新
+            map[newA] = (map[newA] ?: 0) + 1
+        }
+    }
+    // 全部0でない場合の組み合わせ数を計算
+    var ans = c2(n) - c2(n - zero)
+    // 素因数分解結果のマップを使って組み合わせ数を追加
+    map.forEach { (k, v) ->
+        ans += c2(v)
+    }
+    println(ans)
 
 }
 
+private fun c2(n: Long): Long {
+    return n * (n - 1) / 2
+}
 
 private fun read() = readln()
 
@@ -133,43 +178,3 @@ private fun List<Long>.upperBound(value: Long): Long {
 
     return left
 }
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Int, b: Int):Int {
-    return if (b == 0) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Long, b: Long): Long {
-    return if (b == 0L) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Int, b: Int): Int {
-    return a * b / gcd(a, b)
-}
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Long, b: Long): Long {
-    return a * b / gcd(a, b)
-}
-
-#end
-#parse("File Header.java")

@@ -1,7 +1,28 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc343
 
 fun main() {
-    
+    val (n, t) = readIntList()
+    val scoreMap = (1L..n).associateWith { 0L }.toMutableMap()
+
+    val countMap = mutableMapOf<Long, Long>(0L to n.toLong())
+    var size = 1L
+
+    repeat(t) {
+        val (a, b) = readLongList()
+        val origin = scoreMap[a]!!
+        val score = origin + b
+
+        countMap[origin] = countMap[origin]!! - 1L
+        if (countMap[origin]!! == 0L) {
+            countMap.remove(origin)
+            size--
+        }
+
+        scoreMap[a] = score
+        countMap[score] = (countMap[score] ?: 0L) + 1L
+
+        println(countMap.size)
+    }
 
 }
 
@@ -137,7 +158,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +192,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

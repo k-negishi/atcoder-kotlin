@@ -1,8 +1,29 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc101_200.abc154
 
 fun main() {
-    
+    val (n, k) = readIntList()
+    val p = readIntList()
+    val pExp = p.map {
+        calc(it)
+    }
 
+
+    var ans = 0.0
+
+    // 累積和
+    val ruisekiwa = pExp.scan(0.0) { acc, i -> acc + i }
+
+    (k .. n).forEach {
+        ans = maxOf(ans, ruisekiwa[it] - ruisekiwa[it - k])
+    }
+
+    println(ans)
+
+
+}
+
+private fun calc(p: Int):  Double {
+    return if (p == 1) 1.0 else (1 + p) / 2.0
 }
 
 
@@ -137,7 +158,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +192,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

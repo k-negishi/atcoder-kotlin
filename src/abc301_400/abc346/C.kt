@@ -1,7 +1,52 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc346
 
 fun main() {
-    
+    val (n, k) = readLongList()
+//    var aSum = 0L
+//    val a = mutableSetOf<Long>()
+//    repeat(n) {
+//        val aa = readLong()
+//        a.add(aa)
+//        aSum += aa
+//    }
+//    val a = readLongList()
+//    var aSum = a.sum()
+//    val aSet = a.toSet()
+//
+//    for (it in 1L..k) {
+//        if (aSet.contains(it)) {
+//            aSum -= it
+//        }
+//    }
+//
+//    println(aSum)
+
+
+    val a = readLongList().toSet()
+    val aSum = a.filter { it <= k }.sum()
+
+    val kSum = (1L + k) * k / 2
+    val ans = kSum - aSum
+    println(ans)
+
+
+//    val a = readLongList().toSet()
+
+//    var sum = 0L
+////
+////    val kSet = (1L..k).toSet()
+////
+////    val diff = kSet - a
+////
+////    println(diff.sum())
+//
+////    (1L..k).forEach {
+//    for (it in 1L..k) {
+//        if (!a.contains(it)) {
+//            sum += it
+//        }
+//    }
+//    println(sum)
 
 }
 
@@ -137,7 +182,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +216,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

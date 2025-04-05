@@ -1,8 +1,15 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc336
 
 fun main() {
-    
+    val n = readLong()
 
+    val s = (n - 1).toString(5)
+    val ans = s.replace('4', '8')
+        .replace('3', '6')
+        .replace('2', '4')
+        .replace('1', '2')
+
+    println(ans)
 }
 
 
@@ -86,90 +93,3 @@ private fun List<Int>.lowerBound(value: Int): Int {
     return left
 }
 
-private fun List<Long>.lowerBound(value: Long): Long {
-    var left = 0L
-    var right = this.size.toLong()
-
-    while (left < right) {
-        val mid = left + (right - left) / 2
-        if (this[mid.toInt()] < value) {
-            left = mid + 1
-        } else {
-            right = mid
-        }
-    }
-
-    return left
-}
-
-private fun List<Int>.upperBound(value: Int): Int {
-    var left = 0
-    var right = this.size
-
-    while (left < right) {
-        val mid = left + (right - left) / 2
-        if (this[mid] <= value) {
-            left = mid + 1
-        } else {
-            right = mid
-        }
-    }
-
-    return left
-}
-
-private fun List<Long>.upperBound(value: Long): Long {
-    var left = 0L
-    var right = this.size.toLong()
-
-    while (left < right) {
-        val mid = left + (right - left) / 2
-        if (this[mid.toInt()] <= value) {
-            left = mid + 1
-        } else {
-            right = mid
-        }
-    }
-
-    return left
-}
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Int, b: Int):Int {
-    return if (b == 0) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Long, b: Long): Long {
-    return if (b == 0L) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Int, b: Int): Int {
-    return a * b / gcd(a, b)
-}
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Long, b: Long): Long {
-    return a * b / gcd(a, b)
-}
-
-#end
-#parse("File Header.java")

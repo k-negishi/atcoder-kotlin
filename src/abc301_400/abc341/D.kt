@@ -1,10 +1,29 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc341
 
 fun main() {
-    
+    val (n, m, k) = readLongList()
 
+    val smaller = minOf(n, m)
+    val larger = maxOf(n, m)
+
+    var low = 1L
+    var high = k * larger
+
+    // 二分探索する
+    while (low < high) {
+        val mid = (low + high) / 2
+        // mid以下でsmallerとlargerで割り切れる数の個数を計算
+        val count = (mid / smaller) + (mid / larger) - (mid / lcm(n, m))*2
+
+        if (count < k) {
+            low = mid + 1
+        } else {
+            high = mid
+        }
+    }
+
+    println(low)
 }
-
 
 private fun read() = readln()
 
@@ -137,7 +156,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+fun gcd(a: Int, b: Int):Int {
     return if (b == 0) {
         a
     } else {
@@ -148,7 +167,7 @@ private fun gcd(a: Int, b: Int):Int {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Long, b: Long): Long {
+fun gcd(a: Long, b: Long): Long {
     return if (b == 0L) {
         a
     } else {
@@ -160,16 +179,13 @@ private fun gcd(a: Long, b: Long): Long {
 /**
  * 最小公倍数を求める
  */
-private fun lcm(a: Int, b: Int): Int {
+fun lcm(a: Int, b: Int): Int {
     return a * b / gcd(a, b)
 }
 
 /**
  * 最小公倍数を求める
  */
-private fun lcm(a: Long, b: Long): Long {
+fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
-
-#end
-#parse("File Header.java")

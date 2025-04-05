@@ -1,7 +1,36 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc305
 
 fun main() {
-    
+    val (h, w) = readIntList()
+    val s = mutableListOf<MutableList<String>>()
+    repeat(h) {
+        val row = read()
+        s.add(row.split("").toMutableList())
+    }
+
+    val row = s.indexOf(
+        s.filter { it.contains("#") }
+            .associateWith { it.count { s1 -> s1 == "#" } }
+            .minBy { it.value }.key
+    )
+
+    val general =
+        s.filter { it.contains("#") }
+            .associateWith { it.count { s1 -> s1 == "#" } }
+            .maxBy { it.value }.key
+
+
+    val first = general.indexOfFirst { it == "#"}
+    val last = general.indexOfLast { it == "#" }
+
+    var col: Int = 0
+    for (i in first..last) {
+        if (s[row][i] != "#") {
+            col = i
+            break
+        }
+    }
+    println("${row + 1} $col")
 
 }
 
@@ -137,7 +166,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +200,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

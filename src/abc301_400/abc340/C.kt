@@ -1,8 +1,21 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc340
+
+val memo = mutableMapOf<Long, Long>()
 
 fun main() {
-    
+    val n = readLong()
 
+    val ans = f(n)
+    println(ans)
+}
+
+private fun f(x: Long) : Long {
+    if (x == 1L) return 0
+    if (memo.containsKey(x)) return memo[x]!!
+
+    val res = f(x/2) + f((x+1)/2) + x
+    memo[x] = res
+    return res
 }
 
 
@@ -137,7 +150,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +184,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

@@ -1,8 +1,60 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc346
 
 fun main() {
-    
+    val n = readInt()
+    val s = read()
+    val c = readLongList()
 
+    // 奇数番目の文字を1に変更する
+    // 左から0スタートとして考える
+    var sList = s.indices.map {
+        if (it % 2 != 0) {
+            s[it].code.xor(0).xor(1).toChar()
+        } else {
+            s[it]
+        }
+    }
+
+    var ans = Long.MAX_VALUE
+
+    repeat(2) {
+        val l = MutableList(n + 1) { 0L }
+        val r = MutableList(n + 1) { 0L }
+
+        // 左からみていく
+        for (i in 0 until n) {
+            // 前の値を引き継ぐ
+            l[i + 1] = l[i]
+            if (sList[i] == '1') {
+                // 1の場合は0に変換するコストを加算
+                l[i + 1] += c[i]
+            }
+        }
+
+        // 右からみていく
+        for (i in n - 1 downTo 0) {
+            // 前の値を引き継ぐ
+            r[i] = r[i + 1]
+            if (sList[i] == '0') {
+                // 0の場合は1に変換するコストを加算
+                r[i] += c[i]
+            }
+        }
+
+        for (i in 0 until n) {
+            ans = minOf(ans, l[i] + r[i])
+        }
+
+        // 1と0を入れ替える
+        sList = sList.map {
+            if (it == '1') {
+                '0'
+            } else {
+                '1'
+            }
+        }
+    }
+    println(ans)
 }
 
 
@@ -137,7 +189,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +223,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

@@ -1,8 +1,29 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc336
 
 fun main() {
-    
+    var n = readInt()
 
+    var a = readIntList()
+    a = (listOf(0) + a + listOf(0)).toMutableList()
+    n += 2
+
+    val dr = MutableList(n) { 0 }
+    for (i in 1 until n) {
+        dr[i] = minOf(dr[i-1]+1, a[i])
+    }
+
+    val dl = MutableList(n) { 0 }
+    for (i in n-2 downTo 0) {
+        dl[i] = minOf(dl[i+1]+1, a[i])
+    }
+
+    var ans = 0
+    for (i in 0 until n) {
+        // iを中心としたときの最大値
+        val now = minOf(dl[i], dr[i])
+        ans = maxOf(ans, now)
+    }
+    println(ans)
 }
 
 
@@ -134,42 +155,3 @@ private fun List<Long>.upperBound(value: Long): Long {
     return left
 }
 
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Int, b: Int):Int {
-    return if (b == 0) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Long, b: Long): Long {
-    return if (b == 0L) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Int, b: Int): Int {
-    return a * b / gcd(a, b)
-}
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Long, b: Long): Long {
-    return a * b / gcd(a, b)
-}
-
-#end
-#parse("File Header.java")

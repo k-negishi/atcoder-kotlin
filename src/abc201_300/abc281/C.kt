@@ -1,7 +1,24 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc201_300.abc281
 
 fun main() {
-    
+    val (n, t) = readLongList()
+    val a = readLongList()
+
+    val sum = a.sum()
+    var time = t % sum
+
+    var index = 0
+    var ansTime = 0L
+
+    for (i in 0 until n.toInt()) {
+        time -= a[i]
+        if (time <= 0) {
+            index = i + 1
+            ansTime = a[i] - (time * -1)
+            break
+        }
+    }
+    println("$index $ansTime")
 
 }
 
@@ -137,7 +154,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +188,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

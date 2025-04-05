@@ -1,7 +1,68 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc341
 
 fun main() {
-    
+    val (h, w, n) = readIntList()
+    val t = read()
+    val s = (0 until h).map {
+        read().map {
+            it.toString()
+        }
+    }
+
+    var ans = 0
+
+    for (row in 0 until h) {
+        for (col in 0 until w) {
+//            var genzaichi = s[row][col]
+            var nowRow = row
+            var nowCol = col
+            run {
+                t.forEachIndexed { index, arrow ->
+//                if (nowRow < 0 || h <= nowRow || nowCol < 0 || w <= nowCol ) {
+//                    return@forEachIndexed
+//                }
+                    if (s[nowRow][nowCol] == "#") {
+                        return@run
+                    }
+
+                    if (arrow == 'L') {
+                        if (s[nowRow][nowCol-1] == ".") {
+                            nowCol--
+                        } else {
+                            return@run
+                        }
+                    }
+                    if (arrow == 'U') {
+                        if (s[nowRow -1][nowCol] == ".") {
+                            nowRow--
+                        } else {
+                            return@run
+                        }
+                    }
+                    if (arrow == 'R') {
+                        if (s[nowRow][nowCol+1] == ".") {
+                            nowCol++
+                        } else {
+                            return@run
+                        }
+                    }
+                    if (arrow == 'D') {
+                        if (s[nowRow+1][nowCol] == ".") {
+                            nowRow++
+                        } else {
+                            return@run
+                        }
+                    }
+                    if (index == t.length-1) {
+                        ans++
+                    }
+                }
+            }
+        }
+    }
+
+    println(ans)
+
 
 }
 
@@ -134,42 +195,3 @@ private fun List<Long>.upperBound(value: Long): Long {
     return left
 }
 
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Int, b: Int):Int {
-    return if (b == 0) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-/**
- * 最大公約数を求める
- */
-private fun gcd(a: Long, b: Long): Long {
-    return if (b == 0L) {
-        a
-    } else {
-        gcd(b, a % b)
-    }
-}
-
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Int, b: Int): Int {
-    return a * b / gcd(a, b)
-}
-
-/**
- * 最小公倍数を求める
- */
-private fun lcm(a: Long, b: Long): Long {
-    return a * b / gcd(a, b)
-}
-
-#end
-#parse("File Header.java")

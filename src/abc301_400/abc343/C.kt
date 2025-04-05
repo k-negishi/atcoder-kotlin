@@ -1,8 +1,26 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc343
 
 fun main() {
-    
+    val n = readLong()
+    val list = mutableListOf<Long>()
 
+    for (i in 1 .. n) {
+        val rippou = i * i * i
+        if (rippou <= n) {
+            list.add(rippou)
+        } else {
+            break
+        }
+    }
+
+    list.reversed().forEach {
+        val str = it.toString()
+        val reverse = str.reversed()
+        if (str == reverse) {
+            println(str)
+            return
+        }
+    }
 }
 
 
@@ -137,7 +155,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +189,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

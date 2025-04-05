@@ -1,7 +1,45 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc344
+
+import kotlin.math.min
 
 fun main() {
-    
+    val t = read()
+    val n = readInt()
+    val sList = List(n) {
+        readln().split(" ").drop(1)
+    }
+
+    // 動的計画法のテーブル dp を初期化
+    val dp = MutableList(n + 1) { MutableList(t.length + 1) { Int.MAX_VALUE } }
+    dp[0][0] = 0
+
+    for (i in 0 until n) {
+        for (j in 0..t.length) {
+
+            // 何もしなかったらdp[i][j]と同じ結果になる遷移
+            dp[i + 1][j] = dp[i][j]
+        }
+
+        // sList 部分文字列に対するループ
+        for (s in sList[i]) {
+            val l = s.length
+            for (j in 0..t.length) {
+                if (j + l > t.length) continue
+//                for (k in s.indices) {
+//                    if (t[j + k] != s[k]) ok = false
+//                }
+                if (t.substring(j, j+l) == s && dp[i][j] != Int.MAX_VALUE) {
+                    dp[i + 1][j + l] = min(dp[i + 1][j + l], dp[i][j] + 1)
+                }
+            }
+        }
+    }
+
+    if (dp[n][t.length] == Int.MAX_VALUE) {
+        println(-1)
+    } else {
+        println(dp[n][t.length])
+    }
 
 }
 
@@ -137,7 +175,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +209,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

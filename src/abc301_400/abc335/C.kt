@@ -1,8 +1,34 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc335
 
-fun main() {
-    
+ fun main() {
+    val (n, q) = readIntList()
+    val zahyo = ArrayDeque<Pair<Int, Int>>()
+    (0 until  n).forEach {
+        zahyo.add(Pair(it+1, 0))
+    }
 
+    repeat(q) {
+        val (a, b) = readStringList()
+        if (a == "1") {
+            // 移動させるとき
+            // 末尾の要素を削除
+            zahyo.removeAt(zahyo.lastIndex)
+
+            // 先頭に要素を追加
+            val originHead = zahyo[0]
+            when(b) {
+                "R" -> zahyo.addFirst(Pair(originHead.first+1, originHead.second))
+                "L" -> zahyo.addFirst(Pair(originHead.first-1, originHead.second))
+                "U" -> zahyo.addFirst(Pair(originHead.first, originHead.second+1))
+                else -> zahyo.addFirst(Pair(originHead.first, originHead.second-1)) // D
+            }
+        } else {
+            // 座標を求めるとき
+            val p = b.toInt()
+            val (x, y) = zahyo[p-1]
+            println("$x $y")
+        }
+    }
 }
 
 
@@ -137,7 +163,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +197,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

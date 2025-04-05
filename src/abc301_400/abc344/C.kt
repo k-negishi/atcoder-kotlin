@@ -1,7 +1,37 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc344
 
 fun main() {
-    
+    val n = readInt()
+    val a = readLongList()
+    val m = readInt()
+    val b = readLongList()
+    val l = readInt()
+    val c = readLongList()
+    val q = readInt()
+    val x = readLongList()
+
+    val map = x.associateWith {
+        false
+    }.toMutableMap()
+
+    a.forEach { ita ->
+        b.forEach { itb ->
+            c.forEach { itc ->
+                val sum = ita + itb + itc
+                if (map.containsKey(sum)) {
+                    map[sum] = true
+                }
+            }
+        }
+    }
+
+    x.forEach { itx ->
+        if (map[itx]!!) {
+            println("Yes")
+        } else {
+            println("No")
+        }
+    }
 
 }
 
@@ -137,7 +167,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +201,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")

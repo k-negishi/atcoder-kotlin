@@ -1,7 +1,14 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME}
+package abc301_400.abc345
 
 fun main() {
-    
+    val s = read()
+    if (s.first() == '<'
+        && s.count { it == '=' } == (s.length - 2)
+        && s.last() == '>') {
+        println("Yes")
+    } else {
+        println("No")
+    }
 
 }
 
@@ -137,7 +144,7 @@ private fun List<Long>.upperBound(value: Long): Long {
 /**
  * 最大公約数を求める
  */
-private fun gcd(a: Int, b: Int):Int {
+private fun gcd(a: Int, b: Int): Int {
     return if (b == 0) {
         a
     } else {
@@ -171,5 +178,3 @@ private fun lcm(a: Long, b: Long): Long {
     return a * b / gcd(a, b)
 }
 
-#end
-#parse("File Header.java")
